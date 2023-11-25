@@ -14,9 +14,10 @@ public class Card{
 	private int money = 0;
 	
 	/*
-	 * 針對隱私性較高的資源
-	 * 另外撰寫方法供其他類別使用
-	 * 並隱藏該資源的處理過程
+	 * 針對隱私性較高的變數
+	 * 例：(dafault)、private
+	 * 另外撰寫公開(public)方法
+	 * 供不同套件的子類別使用
 	 */
 	protected void setMoney(int money){
 		this.money = money;

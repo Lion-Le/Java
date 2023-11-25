@@ -9,6 +9,10 @@ public class MyCard extends Card{
 		setId(9999998l);
 	}
 	
+	/*
+	 * 撰寫公開(public)方法
+	 * 供無繼承MyCard的類別使用
+	 */
 	public int getMoney(){
 		return super.getMoney();
 	}
