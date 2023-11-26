@@ -14,10 +14,12 @@ public class MyCard extends Card{
 	 * 供無繼承MyCard的類別使用
 	 */
 	public int getMoney(){
+		//呼叫Card類別的getMoney()方法
 		return super.getMoney();
 	}
 	
 	public void setMoney(int money){
+		//呼叫Card類別的setMoney(int money)方法
 		super.setMoney(money);
 	}
 	

@@ -19,18 +19,26 @@ public class Card{
 	 * 另外撰寫公開(public)方法
 	 * 供不同套件的子類別使用
 	 */
+	//Setter menoy method
 	protected void setMoney(int money){
+		// 等號左邊的this.money是指Card的money
+		// 等號右邊的money是想修改的內容
 		this.money = money;
 	}
 	
+	//Getter menoy method
 	protected int getMoney(){
 		return money;
 	}
 	
+	//Setter id method
 	protected void setId(long id){
+		// 等號左邊的this.id是指Card的id
+		// 等號右邊的id是想修改的內容
 		this.id = id;
 	}
 	
+	//Getter id method
 	protected long getId(){
 		return id;
 	}
