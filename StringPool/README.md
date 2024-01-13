@@ -1,6 +1,6 @@
-Equals method and HashCode method
+String Pool
 ======
-Demo of Java Equals method and HashCode method
+Demo of Java String Pool
 
 
 Usage
