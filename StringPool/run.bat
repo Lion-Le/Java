@@ -1,14 +1,14 @@
-@echo off
-echo ½sÄ¶(Compiler):
+ï»¿@echo off
+echo ç·¨è­¯(Compiler):
 echo javac Example.java
 echo.
 javac Example.java
 
-echo °õ¦æ(Run):
+echo åŸ·è¡Œ(Run):
 echo java Example
 echo.
 
-echo ¿é¥X(Output):
+echo è¼¸å‡º(Output):
 java Example
 
 echo.	
