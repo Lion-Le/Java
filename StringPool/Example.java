@@ -15,7 +15,7 @@ public class Example{
 		//Immutable String
 		String str5 = "Hi!";
 		str5 = str5 + " Java";
-		System.out.println(str5);
+		System.out.println(str5); //Hi! Java
 		
 		//intern() method
 		String str6 = "hi~";
