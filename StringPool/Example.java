@@ -11,5 +11,15 @@ public class Example{
 		System.out.println(str1 == str2); //ture
 		System.out.println(str1 == str3); //false
 		System.out.println(str3 == str4); //false
+		
+		//Immutable String
+		String str5 = "Hi!";
+		str5 = str5 + " Java";
+		System.out.println(str5);
+		
+		//intern() method
+		String str6 = "hi~";
+		String str7 = new String("hi~").intern();
+		System.out.println(str6 == str7); //true
 	}
 }
