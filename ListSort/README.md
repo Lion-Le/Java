@@ -1,6 +1,6 @@
-Queue
+List Sort
 ======
-Java Queue Demo
+Java List Sort Demo
 
 
 Usage
