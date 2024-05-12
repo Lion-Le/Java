@@ -1,7 +1,9 @@
 @echo off
 echo ½sÄ¶(Compiler):
+echo javac Person.java
 echo javac StreamExample.java
 echo.
+javac Person.java
 javac StreamExample.java
 
 echo °õ¦æ(Run):

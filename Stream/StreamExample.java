@@ -1,6 +1,8 @@
 import java.util.Arrays;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -16,8 +18,13 @@ public class StreamExample {
 			Arrays.asList(3, 4)
 		);
 		
-		// forEach()
+		// Lambda forEach()
+		System.out.println("Lambda forEach()");
 		list.forEach(s -> System.out.println(s));
+		
+		// method reference forEach() 
+		System.out.println("\nmethod reference forEach()");
+		list.forEach(System.out::println);
 		
 		/*
 		 * stream()
@@ -52,5 +59,24 @@ public class StreamExample {
 		List<Integer> newIntList = intList.stream()
 											.flatMap(i -> i.stream())
 											.collect(Collectors.toList());
+											
+		//case 1
+		List<Integer> duplicateList = Arrays.asList(26, 5, 4, 5, 24, 4);
+		List<Integer> uniqueList = duplicateList.stream()
+												.distinct()
+												.sorted().collect(Collectors.toList());
+		System.out.println("\ncase1: ");
+		uniqueList.forEach(System.out::println);
+		
+		//case 2
+		List<Person> personList = Arrays.asList(
+				new Person(0, "Cat", true),
+				new Person(1, "Lion", false)
+		);
+		//Map<Id, Person>
+		Map<Integer, Person> personMap = personList.stream()
+				.collect(Collectors.toMap(Person::getId, Function.identity()));
+		System.out.println("\ncase2: ");
+		personMap.forEach((k, v) -> System.out.println("key: " + k + ", value: " + v));
 	}
 }
