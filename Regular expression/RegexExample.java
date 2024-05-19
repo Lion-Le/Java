@@ -31,5 +31,28 @@ public class RegexExample {
         } else {
             System.out.println(emailIncorrect + " - 格式不正確");
         }
+		
+		
+		String str = "caabacabcaabbc";
+        String regex ="a{2,}b+";
+        
+        //find()、start()、end()
+        System.out.println("\nfind()、start()、end():");
+        pattern = Pattern.compile(regex);
+        matcher = pattern.matcher(str);
+        while(matcher.find()) {
+        	System.out.println("{" + matcher.start() + ", " + matcher.end() + "}: " 
+        			+ str.substring(matcher.start(), matcher.end()));
+        }
+        
+        //replace
+        System.out.println("\nreplace():");
+        System.out.println(str.replaceAll(regex, "@"));
+        
+        //split
+        System.out.println("\nsplit():");
+        for(String splitStr : str.split(regex)) {
+        	System.out.println(splitStr);
+		}
     }
 }
